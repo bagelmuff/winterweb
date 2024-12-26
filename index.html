@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>winter website</title>
+    <style>
+    	body {
+        	height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            font-family: tahoma;
+            background: #f0fcff
+       }
+       
+       img { 
+       		width: 300px
+         
+       }     
+       
+       .snowflake {
+       		position: absolute;
+            font-size: 30px;
+            top: -30px;
+            animation: fall linear infinite;
+            
+         }
+         
+       @keyframes fall {
+       		0% {
+            	transform: translateY(0);}
+            100% {
+            	transform: translateY(100vh);
+            }
+        }
+        
+        .snowflake:nth-child(1) {
+        	left: 5%;
+            animation-duration: 7s;           
+        }
+        .snowflake:nth-child(2) {
+        	left: 25%;
+            animation-duration: 3s;           
+        }
+        .snowflake:nth-child(3) {
+        	left: 48%;
+            animation-duration: 10s;           
+        }
+        .snowflake:nth-child(4) {
+        	left: 56%;
+            animation-duration: 5s;           
+        }
+        .snowflake:nth-child(5) {
+        	left: 72%;
+            animation-duration: 6s;           
+        }
+        .snowflake:nth-child(6) {
+        	left: 90%;
+            animation-duration: 4s;           
+        }
+   </style>
+</head>
+
+<body>
+	
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❉</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    
+	<h1>happy holidays!</h1>
+    <h2>welcome to my winter website!</h2>
+    <img
+    	src="https://cdn.dribbble.com/users/1325222/screenshots/6265697/15_penguin.png">
+       
+    <br>
+    
+    <a href="https://santatracker.google.com/">santa tracker :D</a>
+    
+</body>
+
+</html>
