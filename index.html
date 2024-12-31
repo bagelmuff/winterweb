@@ -4,18 +4,34 @@
 <head>
 	<title>winter website</title>
     <style>
+    	
     	body {
         	height: 100vh;
-            overflow: hidden;
             text-align: center;
             font-family: tahoma;
             background: #f0fcff
        }
        
-       img { 
-       		width: 300px
-         
-       }     
+       ::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+       
+         img { 
+              width: 200px
+
+         }     
        
        .snowflake {
        		position: absolute;
@@ -57,6 +73,29 @@
         	left: 90%;
             animation-duration: 4s;           
         }
+        
+        .animal-group {
+            border: 2px solid #007BFF; /* Blue border */
+            padding: 20px;
+            margin: 15px auto;
+            width: 80%; /* Control width */
+            background-color: #e8f4fa; /* Light blue background */
+            border-radius: 10px;
+        }
+
+        .animal-group img {
+            display: block;
+            margin: 10px auto;
+        }
+        
+        .animal-group p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
    </style>
 </head>
 
@@ -77,6 +116,36 @@
     <br>
     
     <a href="https://santatracker.google.com/">santa tracker :D</a>
+    
+    <br>
+    <h3>what is your favourite winter animal?</h3>
+    <div class="animal-group">
+        <input type="checkbox" id="option1" name="option1" value="polar bear">
+        <label for="polar bear"> polar bear </label>
+        <img src="https://bloximages.newyork1.vip.townnews.com/valpotorch.com/content/tncms/assets/v3/editorial/3/4b/34b39260-c783-11ec-9097-f3d860fdf9c7/626b82e91b1c1.image.jpg?resize=400%2C252">
+        <p>polar bear skin is actually black and their fur is translucent! they appear white because their fur reflects sunlight.</p>
+    </div>
+
+    <div class="animal-group">
+        <input type="checkbox" id="option2" name="option2" value="arctic fox">
+        <label for="arctic fox"> arctic fox </label>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XR23W4CFtE3wQIHLvbOperxLY2fjXrVDpQ&s">
+        <p>arctic fox dens are used by many generations. some are even over 300 years old!</p>
+    </div>
+
+    <div class="animal-group">
+        <input type="checkbox" id="option3" name="option3" value="reindeer">
+        <label for="reindeer"> reindeer </label>
+        <img src="https://th-thumbnailer.cdn-si-edu.com/VSuGN5XhP21n1D4pkD4ZMFMioDw=/1000x750/filters:no_upscale():focal(2954x2471:2955x2472)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/99/95/99951bd6-0346-4aae-aed3-6ec51454e16e/istock-579231234.jpg">
+        <p>reindeer are actually very good swimmers! they cross large rivers during migration and can swim 3 times the speed of the average human!</p>
+    </div>
+
+    <div class="animal-group">
+        <input type="checkbox" id="option4" name="option4" value="arctic hare">
+        <label for="arctic hare"> arctic hare </label>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Arctic_Hare_1.jpg/640px-Arctic_Hare_1.jpg">
+        <p>due to the cold and harsh climate, arctic hares survive with shortened ears and limbs, a small nose, a high body fat percentage, and a thick coat of fur.</p>
+    </div>
     
 </body>
 
